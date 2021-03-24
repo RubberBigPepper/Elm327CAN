@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:gravity="center_vertical"        
+		        android:layout_height="wrap_content"
+		        android:text="@string/ConnectionType" />
+		    
+		    <Spinner 
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"        
+		        android:layout_weight="1"
+		        android:entries="@array/OBD_type"
+		        android:id="@+id/spinnerConnectionType"/>
+		    
+	    </LinearLayout>
+			    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/linearWifi"
+	        android:visibility="gone"
+	        android:orientation="vertical">
+		    
+	           <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		    	<TextView
+		        	android:layout_width="0dp"
+		        	android:layout_height="wrap_content"
+		        	android:layout_weight="1"
+		        	android:text="@string/IP" />
+		    	
+		    	<EditText
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:textAppearance="?android:attr/textAppearanceLarge"
+		        	android:inputType="number|numberDecimal"
+	    			android:digits="0123456789."
+		        	android:id="@+id/editTextIP"	/>
+	    	
+	    	</LinearLayout>
+	    	
+	        <LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal">
+		        
+		    	<TextView
+		        	android:layout_width="0dp"
+		        	android:layout_height="wrap_content"
+		        	android:layout_weight="1"
+		        	android:text="@string/Port" />
+		    	
+		    	<EditText
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content"
+		        	android:textAppearance="?android:attr/textAppearanceLarge"
+		        	android:inputType="number"
+		        	android:id="@+id/editTextPort"	/>
+	    	
+	    	</LinearLayout>
+		
+	       </LinearLayout>
+	       
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/linearBT"
+	        android:orientation="horizontal">
+	        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:gravity="center_vertical"        
+		        android:layout_height="wrap_content"
+		        android:text="@string/OBDDevice" />
+		    
+		    <Spinner 
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_vertical"        
+		        android:layout_weight="1"
+		        android:id="@+id/spinnerBTDevice"/>
+	    
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        
+		    <TextView
+		        android:layout_width="0dp"
+		        android:gravity="center_vertical"        
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="@string/OBDDelay" />
+		    
+		    <EditText
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textAppearance="?android:attr/textAppearanceLarge"
+	        	android:inputType="number"
+	        	android:id="@+id/editTextDelay"	/>
+	    
+	    </LinearLayout>
+
+	</LinearLayout>
+	
+</ScrollView>

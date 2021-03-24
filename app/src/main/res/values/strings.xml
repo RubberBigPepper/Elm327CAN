@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Elm327CAN</string>
+
+    <string name="ConnectionType">Connection type</string>
+    <string name="IP">"IP adress: "</string>
+    <string name="Port">"Port: "</string>
+    <string name="OBDDelay">"Read delay, ms: "</string>
+    <string name="OBDDevice">Select OBD-BT device:</string>
+    <string name="Settings">Settings</string>
+</resources>
